@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from bracketweb.com/modins-html/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Nov 2025 07:19:42 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Three || Modins || HTML Template For Beauty & Spa</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Sollox is a modern HTML Template for Beauty, Spa Centers, Hair, Nail, Spa Salons & Cosmetic shops. The template perfectly fits Beauty Spa, Salon, and Wellness Treatments websites and businesses." />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/vendors/modins-icons/style.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/ion.rangeSlider/ion.rangeSlider.min.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/modins.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+        <!-- /.preloader -->
+    <div class="page-wrapper">
+        <div class="topbar-one">
+            <div class="topbar-one__bg" style="background-image: url('assets/images/pattern/header-top-pattern.png');"></div>
+            <div class="container-fluid">
+                <div class="topbar-one__inner">
+                    <ul class="list-unstyled topbar-one__info">
+                        <li class="topbar-one__info__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="#">Andheri Kurla Road, Chakala (E), Mumbai 400059</a>
+                        </li>
+                        <li class="topbar-one__info__item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:needhelp@company.com">support@policy365.com</a>
+                        </li>
+                    </ul><!-- /.list-unstyled topbar-one__info -->
+                    <div class="topbar-one__right">
+                        <ul class="topbar-one__menu">
+                            <li><a href="#">Make a Claim</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                      <select id="languageSwitcher" style="padding:5px 8px; border-radius:6px;">
+  <option value="en">English</option>
+  <option value="hi">हिन्दी</option>
+  <option value="mr">मराठी</option>
+  <option value="ta">தமிழ்</option>
+  <option value="te">తెలుగు</option>
+  <option value="gu">ગુજરાતી</option>
+  <option value="bn">বাংলা</option>
+  <option value="kn">ಕನ್ನಡ</option>
+  <option value="ml">മലയാളം</option>
+  <option value="or">ଓଡ଼ିଆ</option>
+</select>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,hi,mr,ta,te,gu,bn,kn,ml,or',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+    window.googleTranslateReady = true;
+  }
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  document.getElementById("languageSwitcher").addEventListener("change", function () {
+    const lang = this.value;
+    triggerTranslation(lang);
+  });
+
+  function triggerTranslation(lang) {
+    const iframe = document.querySelector("iframe.goog-te-menu-frame");
+    if (!iframe) {
+      console.warn("Google Translate not ready yet, retrying...");
+      setTimeout(() => triggerTranslation(lang), 1000);
+      return;
+    }
+
+    const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    const select = innerDoc.querySelector(".goog-te-combo");
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+      console.log("Language changed to:", lang);
+    } else {
+      console.warn("Translator combo not found, retrying...");
+      setTimeout(() => triggerTranslation(lang), 1000);
+    }
+  }
+</script>
+
+
+
+                    </div><!-- /.topbar-one__right -->
+                </div><!-- /.topbar-one__inner -->
+            </div><!-- /.container-fluid -->
+        </div><!-- /.topbar-one -->
+
+
+
+
+        <header class="main-header sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header__inner">
+                    <div class="main-header__logo">
+                        <a href="index.html">
+                            <img src="assets/images/P365_LOGO_COLOR.png" alt="Modins HTML" style="width:120px;height: auto;margin-right:8px; vertical-align: middle">
+                        </a>
+                    </div><!-- /.main-header__logo -->
+                    <div class="main-header__nav__wrapper">
+                        <nav class="main-header__nav main-menu">
+                            <ul class="main-menu__list">
+
+                                <li class="dropdown megamenu">
+                                    <a href="index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+    Insurance <i class="fa-solid fa-angle-down ms-1"></i>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="helath-insurance.html"><i class="fa-solid fa-heart-pulse me-2 text-primary"></i> Health Insurance</a></li>
+    <li><a class="dropdown-item" href="life-insurance.html"><i class="fa-solid fa-hand-holding-heart me-2 text-success"></i> Life Insurance</a></li>
+    <li><a class="dropdown-item" href="motor-insurance.html"><i class="fa-solid fa-car me-2 text-danger"></i> Motor Insurance</a></li>
+  </ul>
+</li>
+
+                                <li class="dropdown">
+                                    <a href="insurance.html">Benifits</a>
+                                    
+                                </li>
+                                <li class="dropdown">
+                                    <a href="portfolio.html">Coverage</a>
+                                    
+                                </li>
+                               
+                            </ul>
+                        </nav><!-- /.main-header__nav -->
+                        <div class="main-header__right">
+                            <div class="mobile-nav__btn mobile-nav__toggler">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- /.mobile-nav__toggler -->
+                            <div class="header-buttons">
+    <a href="https://app.policies365.com/login" class="btn-customer">
+        Join us as a POSP
+        <em></em>
+    </a>
+    <a href="https://app.policies365.com/B2CLogin/p365" class="btn-agent">
+        Customer Login
+        <em></em>
+    </a>
+</div>
+
+                        </div><!-- /.main-header__right -->
+
+                    </div>
+                </div><!-- /.main-header__inner -->
+            </div><!-- /.container-fluid -->
+        </header><!-- /.main-header -->
+
+        <style>
+            /* Common button styling */
+.header-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px;            /* Makes it oval */
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+/* CUSTOMER LOGIN button */
+.btn-customer {
+    background-color: #ffffff;      /* White background */
+    color: #004aad;                 /* Blue text */
+    border: 2px solid #004aad;  
+}
+
+.btn-customer:hover {
+    background-color: #004aad;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 74, 173, 0.3);
+}
+
+/* AGENT LOGIN button */
+.btn-agent {
+    background-color: #ffffff;      /* White background */
+    color: #004aad;                 /* Blue text */
+    border: 2px solid #004aad;      /* Blue border */
+}
+
+.btn-agent:hover {
+    background-color: #004aad;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 74, 173, 0.3);
+}
+
+/* Container for spacing/alignment */
+.header-buttons {
+    display: flex;
+    gap: 15px;                      /* Space between buttons */
+    justify-content: center;        /* Center horizontally */
+    align-items: center;
+    margin-top: 10px;
+}
+
+        </style>
+
+ <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Policy365 Favicon -->
+  <link rel="icon" href="assets/images/policy365-icon.png" type="image/png">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Floating Chat Button */
+    .chatbot-toggle {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+     
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      animation: pulse 2s infinite;
+    }
+
+    .chatbot-toggle:hover {
+      transform: scale(1.1);
+      
+    }
+
+    .chat-fav-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(0, 123, 255, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
+    }
+
+    /* Chat Window */
+    .chatbot-box {
+      position: fixed;
+      bottom: 100px;
+      right: 25px;
+      width: 380px;
+      height: 520px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: none;
+      flex-direction: column;
+      z-index: 998;
+      animation: slideUp 0.4s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Header */
+    .chat-header {
+      background: linear-gradient(135deg, #bac0c4, #00b4db);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .chat-logo {
+      width: 35px;
+      height: 35px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    /* Chat Body */
+    .chat-body {
+      flex: 1;
+      padding: 16px;
+      overflow-y: auto;
+      background: #f8fbff;
+      font-size: 14px;
+    }
+
+    .chat-message {
+      margin: 10px 0;
+      padding: 12px 16px;
+      border-radius: 14px;
+      line-height: 1.5;
+      max-width: 80%;
+      word-wrap: break-word;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .bot {
+      background-color: #e8f4ff;
+      align-self: flex-start;
+      color: #0a3c66;
+      border-bottom-left-radius: 0;
+    }
+
+    .user {
+      background-color: #0078d4;
+      color: #fff;
+      align-self: flex-end;
+      border-bottom-right-radius: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Input */
+    .chat-input {
+      display: flex;
+      padding: 12px;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+
+    .chat-input input {
+      flex: 1;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 14px;
+      background: #f1f3f6;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .chat-input button {
+      background: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-left: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .chat-input button:hover {
+      background: #005fa3;
+      transform: scale(1.05);
+    }
+
+    .typing {
+      font-style: italic;
+      color: #888;
+      font-size: 13px;
+      margin-left: 10px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🌟 Floating Chatbot Button -->
+<button class="chatbot-toggle" id="chatbotBtn">
+  <img src="assets/images/logo/chatbot-logo.png" alt="Chat" class="chat-fav-icon">
+</button>
+
+<!-- 💬 Chatbot Window -->
+<div class="chatbot-box" id="chatBox">
+  <div class="chat-header">
+    <div class="chat-info">
+      <img src="assets/images/logo/chatbot-logo.png" alt="Policy365" class="chat-logo">
+      <div>
+        <h6 class="chat-title">Policy365 Assistant</h6>
+        <small class="chat-status">Online • Ready to help</small>
+      </div>
+    </div>
+    <button class="chat-close" id="closeChat">×</button>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot-message">
+      👋 Hi! I’m your <b>Policy365 Assistant</b>.<br>
+      How can I help you today?
+      <ul>
+        <li>💡 Get a health insurance quote</li>
+        <li>📋 Know policy benefits</li>
+        <li>🧾 Understand claim process</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message..." disabled>
+    <button id="sendBtn">➤</button>
+  </div>
+</div>
+
+<!-- 🌈 Chatbot Styles -->
+<style>
+  /* 🌟 Floating Button */
+.chatbot-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #e9e5e1);
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+  box-shadow: 0 8px 25px rgba(255, 0, 150, 0.4);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+.chatbot-toggle:hover {
+  transform: scale(1.1) rotate(8deg);
+  box-shadow: 0 10px 40px rgba(255, 0, 150, 0.6);
+}
+.chat-fav-icon {
+  width: 38px;
+  height: 38px;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 💬 Chatbox Container */
+.chatbot-box {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 360px;
+  height: 500px;
+  background: rgba(231, 7, 7, 0.98);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeInUp 0.4s ease forwards;
+  z-index: 999;
+  border: 2px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ✨ Header */
+.chat-header {
+  background: linear-gradient(135deg, #ff7a00, #ff00a8, #6c63ff);
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(255, 0, 150, 0.3);
+}
+.chat-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.chat-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+.chat-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.chat-status {
+  font-size: 12px;
+  opacity: 0.9;
+  color: #f8f8f8;
+}
+.chat-close {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.chat-close:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(90deg);
+}
+
+/* 🪶 Body */
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #fdfbff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #d8d8ff #ffffff;
+}
+.chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-body::-webkit-scrollbar-thumb {
+  background: #c0bfff;
+  border-radius: 10px;
+}
+
+/* 💬 Messages */
+.bot-message,
+.user-message {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.bot-message {
+  background: linear-gradient(135deg, #f5f7ff, #e9e3ff);
+  color: #333;
+  align-self: flex-start;
+  border-top-left-radius: 0;
+  box-shadow: 0 2px 10px rgba(108, 99, 255, 0.1);
+}
+.user-message {
+  background: linear-gradient(135deg, #ff7a00, #ff00a8);
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 3px 12px rgba(255, 0, 150, 0.3);
+}
+
+/* ✏️ Input Area */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #e0e0e0;
+  background: #ffffff;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
+}
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  color: #333;
+  border-radius: 0 0 0 15px;
+}
+.chat-input button {
+  background: linear-gradient(135deg, #ff7a00, #ff00a8);
+  border: none;
+  color: white;
+  padding: 0 18px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 0 0 15px 0;
+  transition: 0.3s ease;
+}
+.chat-input button:hover {
+  background: linear-gradient(135deg, #ff00a8, #6c63ff);
+  transform: scale(1.05);
+}
+
+/* 💭 Typing Indicator */
+.typing {
+  font-style: italic;
+  color: #888;
+  background: #efe9ff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.1);
+  animation: blink 1.5s infinite;
+}
+@keyframes blink {
+  50% { opacity: 0.6; }
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .chatbot-box {
+    right: 10px;
+    bottom: 90px;
+    width: 90%;
+    height: 70%;
+  }
+}
+
+</style>
+
+<!-- ⚡ Chatbot Script -->
+<script>
+const chatbotBtn = document.getElementById("chatbotBtn");
+const chatBox = document.getElementById("chatBox");
+const chatBody = document.getElementById("chatBody");
+const userInput = document.getElementById("userInput");
+const sendBtn = document.getElementById("sendBtn");
+const closeChat = document.getElementById("closeChat");
+
+let step = 0;
+let userData = {};
+
+function getGreeting() {
+  const hour = new Date().getHours();
+  if (hour < 12) return "Good Morning ☀️";
+  if (hour < 18) return "Good Afternoon 🌞";
+  return "Good Evening 🌙";
+}
+
+function addMessage(text, sender) {
+  const msg = document.createElement("div");
+  msg.classList.add(sender === "user" ? "user-message" : "bot-message");
+  msg.innerText = text;
+  chatBody.appendChild(msg);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function showTyping(callback) {
+  const typingMsg = document.createElement("div");
+  typingMsg.classList.add("typing");
+  typingMsg.innerText = "Assistant is typing...";
+  chatBody.appendChild(typingMsg);
+  chatBody.scrollTop = chatBody.scrollHeight;
+  setTimeout(() => {
+    typingMsg.remove();
+    callback();
+  }, 1000);
+}
+
+function startChat() {
+  addMessage(`${getGreeting()}! I’m your Policy365 Assistant.`, "bot");
+  showTyping(() => {
+    addMessage("Can I know your full name, please? 😊", "bot");
+    userInput.disabled = false;
+    userInput.focus();
+  });
+}
+
+sendBtn.addEventListener("click", handleResponse);
+userInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") handleResponse();
+});
+
+function handleResponse() {
+  const userMsg = userInput.value.trim();
+  if (!userMsg) return;
+  addMessage(userMsg, "user");
+  userInput.value = "";
+
+  if (step === 0) {
+    userData.name = userMsg;
+    if (userData.name.length < 2) {
+      showTyping(() => addMessage("⚠️ Please enter a valid name.", "bot"));
+      return;
+    }
+    showTyping(() => addMessage(`Nice to meet you, ${userData.name}! 😊`, "bot"));
+    setTimeout(() => addMessage("May I have your 10-digit mobile number? 📱", "bot"), 1000);
+    step++;
+  } 
+  else if (step === 1) {
+    const phonePattern = /^[6-9]\d{9}$/;
+    if (!phonePattern.test(userMsg)) {
+      showTyping(() => addMessage("❌ Please enter a valid 10-digit mobile number starting with 6–9.", "bot"));
+      return;
+    }
+    userData.mobile = userMsg;
+    showTyping(() => addMessage("Got it. Please share your email address. 📧", "bot"));
+    step++;
+  } 
+  else if (step === 2) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(userMsg)) {
+      showTyping(() => addMessage("⚠️ Please enter a valid email address.", "bot"));
+      return;
+    }
+    userData.email = userMsg;
+
+    // ✅ Send to a different backend connection file
+    sendToBackend(userData);
+
+    showTyping(() => {
+      addMessage(`Thanks, ${userData.name}! ✅ Your info has been saved.`, "bot");
+      addMessage("You can now ask me about any insurance plan (health, motor, life, claim, renewal). 💬", "bot");
+    });
+    step++;
+  } 
+  else {
+    processGeneralQuery(userMsg);
+  }
+}
+
+function processGeneralQuery(userMsg) {
+  const qaList = [
+    { keywords: ["health", "medical"], answer: "🏥 Policy365 offers Health Insurance covering hospitalization, OPD, and family care." },
+    { keywords: ["life", "term"], answer: "💙 We provide flexible Life Insurance plans ensuring your family’s financial security." },
+    { keywords: ["motor", "car", "bike"], answer: "🚗 Our Motor Insurance covers cars and two-wheelers with instant online renewal." },
+    { keywords: ["claim", "process"], answer: "🧾 To make a claim, visit the ‘Make a Claim’ section on our website." },
+    { keywords: ["support", "help"], answer: "📞 Our support team is available 24/7 via chat, email, and phone." },
+    { keywords: ["renew", "renewal"], answer: "🔄 You can renew your policy online instantly at www.policy365.com." },
+    { keywords: ["travel"], answer: "✈️ We offer international and domestic travel insurance for safe journeys." },
+    { keywords: ["family"], answer: "👨‍👩‍👧‍👦 Family Floater Health Insurance covers your whole family affordably." },
+    { keywords: ["maternity"], answer: "🤰 Our maternity insurance covers delivery and newborn care." },
+    { keywords: ["senior", "old age"], answer: "👴 We offer Senior Citizen Health Insurance up to ₹10 lakh coverage." }
+  ];
+
+  let found = false;
+  for (const item of qaList) {
+    if (item.keywords.some((word) => userMsg.toLowerCase().includes(word))) {
+      showTyping(() => addMessage(item.answer, "bot"));
+      found = true;
+      break;
+    }
+  }
+  if (!found) {
+    showTyping(() =>
+      addMessage("🤔 I'm not sure about that, but our support team will get back to you shortly.", "bot")
+    );
+  }
+}
+
+// ✅ Function to call backend PHP (separate connection)
+function sendToBackend(data) {
+  fetch("chatbot_inquiries.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      full_name: data.name,
+      phone: data.mobile,
+      email: data.email
+    })
+  })
+  .then(res => res.text())
+  .then(result => console.log("✅ Backend response:", result))
+  .catch(err => console.error("❌ Backend error:", err));
+}
+
+// Toggle open/close
+chatbotBtn.addEventListener("click", () => {
+  chatBox.style.display = "flex";
+  chatbotBtn.style.display = "none";
+  if (step === 0) startChat();
+});
+closeChat.addEventListener("click", () => {
+  chatBox.style.display = "none";
+  chatbotBtn.style.display = "block";
+});
+
+</script>
+<section class="hero-curve-section">
+  <!-- LEFT CONTENT -->
+  <div class="hero-left">
+    <div class="hero-content">
+      <h1>Secure Your Future with <span>Policies365</span></h1>
+      <p>
+        <strong>Policies365</strong> brings you personalized life insurance solutions
+        designed for your comfort and peace of mind. Protect your family, your income,
+        and your dreams with smart, flexible, and affordable coverage.
+      </p>
+
+      <ul class="hero-points">
+        <li>💡 Personalized Life & Term Plans for Every Stage</li>
+        <li>⚡ Fast Policy Approval — Zero Paperwork</li>
+        <li>🛡️ 24×7 Claims & Dedicated Support Team</li>
+        <li>💰 Tax Savings under Section 80C & 10(10D)</li>
+      </ul>
+
+      <a href="#plans" class="btn-yellow">Explore Our Life Plans</a>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="hero-right">
+    <div class="form-card">
+      <h3>Get a Quick Quote</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <select required>
+          <option value="">Select Plan Type</option>
+          <option>Life Insurance</option>
+          <option>Term Plan</option>
+          <option>Family Protection</option>
+          <option>Retirement Plan</option>
+        </select>
+        <button type="submit" class="btn-submit">Get Quote</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ========== LAYOUT ========== */
+.hero-curve-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+/* ========== LEFT SIDE (CREATIVE CURVE) ========== */
+.hero-left {
+  flex: 1;
+  position: relative;
+  padding: 100px 60px;
+  color: #fff;
+  background: radial-gradient(circle at 10% 20%, #002b6b 0%, #000c30 90%);
+  clip-path: ellipse(80% 100% at 10% 50%);
+  z-index: 2;
+  animation: fadeSlideLeft 1.2s ease forwards;
+}
+
+.hero-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.08), transparent 70%);
+  animation: softGlow 6s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+/* Text */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 520px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.hero-content h1 span {
+  color: #ffb703;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d8e6ff;
+  margin-bottom: 25px;
+}
+
+/* Bullet points */
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hero-points li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #e0ecff;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeSlideLeft 0.8s ease forwards;
+}
+
+.hero-points li:nth-child(1) { animation-delay: 0.4s; }
+.hero-points li:nth-child(2) { animation-delay: 0.7s; }
+.hero-points li:nth-child(3) { animation-delay: 1s; }
+.hero-points li:nth-child(4) { animation-delay: 1.3s; }
+
+/* Button */
+.btn-yellow {
+  background: #ffb703;
+  color: #002b6b;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0 6px 20px rgba(255, 183, 3, 0.4);
+}
+
+.btn-yellow:hover {
+  background: #ffd166;
+  transform: translateY(-3px);
+}
+
+/* ========== RIGHT SIDE (FORM) ========== */
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 80px 60px;
+  animation: fadeSlideRight 1.4s ease forwards;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #002b6b;
+  font-weight: 600;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btn-submit {
+  background: #002b6b;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #001a4d;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeSlideLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeSlideRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes softGlow {
+  0% { opacity: 0.3; transform: scale(1); }
+  100% { opacity: 0.7; transform: scale(1.05); }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .hero-curve-section {
+    flex-direction: column;
+    background: #001b4d;
+  }
+
+  .hero-left, .hero-right {
+    flex: none;
+    width: 100%;
+    clip-path: none;
+    padding: 60px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+}
+</style>
+
+
+
+
+
+       <section class="service-three life-insurance-section">
+  <div class="container">
+    <div class="row gutter-y-30">
+      
+      <!-- Life Insurance Overview -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-three-card wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
+          <div class="service-three-card__inner">
+            <div class="service-three-card__icon animated-icon">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="service-three-card__content">
+              <div class="service-three-card__img" style="background-image: url('assets/images/service/life-cover-bg.jpg');"></div>
+              <h3 class="service-three-card__title">
+                <a href="life-insurance.html">Life Insurance</a>
+              </h3>
+              <p class="service-three-card__info">
+                Secure your family’s financial future with Life Insurance from Policies365 India. 
+                Pay a small premium and protect your loved ones from life’s uncertainties — 
+                ensuring their lifestyle, education, and dreams stay safe, even when you’re not around.
+              </p>
+              <a href="life-insurance.html" class="modins-btn">Explore Plans <em></em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Family Protection Plan -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-three-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+          <div class="service-three-card__inner">
+            <div class="service-three-card__icon animated-icon">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <div class="service-three-card__content">
+              <div class="service-three-card__img" style="background-image: url('assets/images/service/family-protect-bg.jpg');"></div>
+              <h3 class="service-three-card__title">
+                <a href="family-protection.html">Family Protection Plan</a>
+              </h3>
+              <p class="service-three-card__info">
+                A perfect safety net for your loved ones. 
+                Covers daily needs, home loans, and education expenses — all under one trusted policy.
+              </p>
+              <a href="family-protection.html" class="modins-btn">View Details <em></em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Term Life Policy -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-three-card wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="400ms">
+          <div class="service-three-card__inner">
+            <div class="service-three-card__icon animated-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <div class="service-three-card__content">
+              <div class="service-three-card__img" style="background-image: url('assets/images/service/term-plan-bg.jpg');"></div>
+              <h3 class="service-three-card__title">
+                <a href="term-insurance.html">Term Life Policy</a>
+              </h3>
+              <p class="service-three-card__info">
+                Get high coverage at low premiums. 
+                Policies365 India’s term insurance gives your family financial confidence for years to come.
+              </p>
+              <a href="term-insurance.html" class="modins-btn">Get a Quote <em></em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.service-three -->
+
+
+
+       <section class="about-three section-padding" style="background: linear-gradient(135deg, #f7f9fc 0%, #ffffff 100%); border-radius: 50px 50px 0 0; padding: 100px 0;">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Content -->
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <h6 class="text-primary mb-3" style="font-weight:600;">Life Insurance Simplified</h6>
+                    <h2 class="mb-4" style="font-weight:700; line-height:1.3; color:#222;">What is Life Insurance? The Easiest Way to Protect Your Loved Ones</h2>
+                    <p style="color:#555; font-size:16px; line-height:1.7; margin-bottom:30px;">
+                        Life insurance ensures your loved ones remain financially secure, even if life takes an unexpected turn.
+                        By investing a small premium regularly, you provide your family with a strong financial backup — helping them
+                        maintain stability, pay bills, and live with dignity.
+                    </p>
+
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="margin-bottom:18px; display:flex; align-items:flex-start;">
+                            <i class="icon-check" style="color:#0b6efd; font-size:20px; margin-right:12px;"></i>
+                            <span><strong>Covers essential daily expenses</strong> — groceries, bills, rent, and other basics.</span>
+                        </li>
+                        <li style="margin-bottom:18px; display:flex; align-items:flex-start;">
+                            <i class="icon-check" style="color:#0b6efd; font-size:20px; margin-right:12px;"></i>
+                            <span><strong>Manages big financial commitments</strong> — home loans, EMIs, and education costs.</span>
+                        </li>
+                        <li style="margin-bottom:18px; display:flex; align-items:flex-start;">
+                            <i class="icon-check" style="color:#0b6efd; font-size:20px; margin-right:12px;"></i>
+                            <span><strong>Handles emergencies</strong> — medical bills, sudden expenses, and urgent needs.</span>
+                        </li>
+                        <li style="display:flex; align-items:flex-start;">
+                            <i class="icon-check" style="color:#0b6efd; font-size:20px; margin-right:12px;"></i>
+                            <span><strong>Maintains family lifestyle</strong> — ensures no compromise on comfort or dreams.</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="life-insurance.html" class="btn btn-primary" style="padding:12px 30px; border-radius:30px; font-weight:600;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="position-relative text-center">
+                    <div style="border-radius:30px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+                        <img src="assets/images/resources/life-insurance-family.jpg" alt="Life Insurance Family" style="width:100%; height:auto;">
+                    </div>
+                    <div style="position:absolute; bottom:-25px; right:-25px; background:#0b6efd; color:#fff; padding:25px 30px; border-radius:20px; box-shadow:0 8px 20px rgba(11,110,253,0.3);">
+                        <h3 style="font-size:42px; font-weight:700; margin:0;">10+</h3>
+                        <p style="margin:0; font-size:14px;">Years of Trust & Protection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+        <section class="funfact-one funfact-two">
+            <div class="container">
+                <div class="list-unstyled funfact-one__list">
+                    <div class="funfact-two__lines">
+                        <img src="assets/images/shapes/line.png" alt="">
+                        <img src="assets/images/shapes/line.png" alt="">
+                        <img src="assets/images/shapes/line.png" alt="">
+                        <img src="assets/images/shapes/line-4.png" alt="">
+                    </div>
+                    <div class="row gutter-y-40">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="funfact-one__item count-box">
+                                <i class="icon-insurance"></i><!-- /.funfact-one__icon -->
+                                <div class="funfact-one__content">
+                                    <div class="funfact-one__wrap">
+                                        <h3 class="funfact-one__count count-text" data-stop="3.6" data-speed="1500">
+                                        </h3>
+                                        <h3 class="funfact-one__count count-before">k</h3>
+                                    </div>
+                                    <!-- /.funfact-one__count -->
+                                    <p class="funfact-one__text">Gave insurances</p><!-- /.funfact-one__text -->
+                                </div><!-- /.funfact-one__content -->
+                            </div><!-- /.funfact-one__item -->
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="funfact-one__item count-box">
+                                <i class="icon-group"></i><!-- /.funfact-one__icon -->
+                                <div class="funfact-one__content">
+                                    <div class="funfact-one__wrap">
+                                        <h3 class="funfact-one__count count-text" data-stop="90" data-speed="1500"></h3>
+                                        <h3 class="funfact-one__count count-before">+</h3>
+                                    </div>
+                                    <!-- /.funfact-one__count -->
+                                    <p class="funfact-one__text">Professional team</p><!-- /.funfact-one__text -->
+                                </div><!-- /.funfact-one__content -->
+                            </div><!-- /.funfact-one__item -->
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="funfact-one__item count-box">
+                                <i class="icon-life-insurance"></i><!-- /.funfact-one__icon -->
+                                <div class="funfact-one__content">
+                                    <div class="funfact-one__wrap">
+                                        <h3 class="funfact-one__count count-text" data-stop="4.9" data-speed="1500">
+                                        </h3>
+                                        <h3 class="funfact-one__count count-before">k</h3>
+                                    </div>
+                                    <!-- /.funfact-one__count -->
+                                    <p class="funfact-one__text">Satisfied customers</p><!-- /.funfact-one__text -->
+                                </div><!-- /.funfact-one__content -->
+                            </div><!-- /.funfact-one__item -->
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="funfact-one__item count-box">
+                                <i class="icon-success"></i><!-- /.funfact-one__icon -->
+                                <div class="funfact-one__content">
+                                    <div class="funfact-one__wrap">
+                                        <h3 class="funfact-one__count count-text" data-stop="98" data-speed="1500"></h3>
+                                        <h3 class="funfact-one__count count-before">%</h3>
+                                    </div>
+                                    <!-- /.funfact-one__count -->
+                                    <p class="funfact-one__text">Success rates</p><!-- /.funfact-one__text -->
+                                </div><!-- /.funfact-one__content -->
+                            </div><!-- /.funfact-one__item -->
+                        </div>
+                    </div>
+                </div><!-- /.list-unstyled funfact-one__list -->
+            </div><!-- /.container -->
+        </section><!-- /.funfact-one -->
+
+        <section class="video-one">
+            <div class="video-one__bg jarallax" data-jarallax data-speed="0.3" style="background-image: url(assets/images/backgrounds/video-bg.jpg);"></div>
+            <!-- /.video-one__bg -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-9 wow fadeInLeft" data-wow-delay="200ms">
+                        <h2 class="video-one__title">We’re protecting your <br>
+                            future with the best <br>
+                            insurance</h2>
+                        <!-- /.video-one__title -->
+                    </div>
+                    <div class="col-lg-3 text-lg-end wow fadeInRight" data-wow-delay="200ms">
+                        <div class="video-one__btn">
+                            <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div><!-- /.video-one__btn -->
+                    </div>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.video-one -->
+
+       
+<section class="testimonials-one">
+  <div class="testimonials-one__bg" style="background-image: url('assets/images/backgrounds/testimonail-one-bg.jpg');"></div>
+  <div class="container-fluid">
+    <div class="testimonials-one__heading">
+      <div class="sec-title text-center">
+        <h6 class="sec-title__tagline">Our Happy Customers</h6>
+        <h3 class="sec-title__title">What People Say About Policies365</h3>
+      </div>
+      <p class="testimonials-one__info">
+        Real experiences from people who found peace of mind through our insurance solutions. At Policies365, we simplify insurance — so you can focus on what matters most.
+      </p>
+    </div>
+
+    <div class="testimonials-one__carousel modins-owl__carousel modins-owl__carousel--with-shadow modins-owl__carousel--basic-nav owl-carousel"
+      data-owl-options='{
+        "items": 1,
+        "margin": 0,
+        "loop": true,
+        "smartSpeed": 700,
+        "nav": false,
+        "dots": true,
+        "autoplay": true,
+        "responsive": {
+          "0": {"items": 1},
+          "576": {"items": 2, "margin":30},
+          "992": {"items": 2, "margin": 30}
+        }
+      }'>
+
+      <!-- Review 1 -->
+      <div class="item">
+        <div class="testimonials-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="000ms">
+          <div class="testimonials-card__inner">
+            <div class="shape-one">
+              <img src="assets/images/shapes/testi-shape-one.png" alt="shape">
+            </div>
+            <div class="testimonials-card__top">
+              <div class="testimonials-card__image">
+                <img src="assets/images/resources/testi-1-1.jpg" alt="Rohit Patel">
+              </div>
+              <div class="testimonials-card__top__left">
+                <div class="testimonials-card__rating">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <h3 class="testimonials-card__name">Rohit Patel</h3>
+                <p class="testimonials-card__designation">Life Insurance Customer, Pune</p>
+              </div>
+            </div>
+            <div class="testimonials-card__content">
+              “I was confused about which life insurance plan suited me best. Policies365 made it simple — they compared multiple options and helped me choose the right coverage in minutes.”
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="item">
+        <div class="testimonials-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+          <div class="testimonials-card__inner">
+            <div class="shape-one">
+              <img src="assets/images/shapes/testi-shape-one.png" alt="shape">
+            </div>
+            <div class="testimonials-card__top">
+              <div class="testimonials-card__image">
+                <img src="assets/images/resources/testi-1-2.jpg" alt="Ananya Singh">
+              </div>
+              <div class="testimonials-card__top__left">
+                <div class="testimonials-card__rating">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
+                </div>
+                <h3 class="testimonials-card__name">Ananya Singh</h3>
+                <p class="testimonials-card__designation">Policy Holder, Delhi NCR</p>
+              </div>
+            </div>
+            <div class="testimonials-card__content">
+              “The customer support team explained every detail clearly. I purchased my term life plan online without any paperwork. Seamless and stress-free!”
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="item">
+        <div class="testimonials-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+          <div class="testimonials-card__inner">
+            <div class="shape-one">
+              <img src="assets/images/shapes/testi-shape-one.png" alt="shape">
+            </div>
+            <div class="testimonials-card__top">
+              <div class="testimonials-card__image">
+                <img src="assets/images/resources/testi-1-3.jpg" alt="Vikram Rao">
+              </div>
+              <div class="testimonials-card__top__left">
+                <div class="testimonials-card__rating">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <h3 class="testimonials-card__name">Vikram Rao</h3>
+                <p class="testimonials-card__designation">Business Owner, Hyderabad</p>
+              </div>
+            </div>
+            <div class="testimonials-card__content">
+              “Policies365 helped me get group insurance for my small business. Everything was handled digitally, and my employees were covered within 24 hours.”
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="item">
+        <div class="testimonials-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+          <div class="testimonials-card__inner">
+            <div class="shape-one">
+              <img src="assets/images/shapes/testi-shape-one.png" alt="shape">
+            </div>
+            <div class="testimonials-card__top">
+              <div class="testimonials-card__image">
+                <img src="assets/images/resources/testi-1-4.jpg" alt="Megha Kapoor">
+              </div>
+              <div class="testimonials-card__top__left">
+                <div class="testimonials-card__rating">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <h3 class="testimonials-card__name">Megha Kapoor</h3>
+                <p class="testimonials-card__designation">IT Professional, Bengaluru</p>
+              </div>
+            </div>
+            <div class="testimonials-card__content">
+              “The best part about Policies365 is transparency. I could compare premiums, benefits, and claim ratios of top insurers side by side — all in one place.”
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.testimonials-one__carousel -->
+  </div><!-- /.container -->
+</section><!-- /.testimonials-one -->
+
+<div class="feature-three">
+  <div class="container">
+    <div class="sec-title text-center">
+      <h6 class="sec-title__tagline">Protection You Can Trust</h6>
+      <h3 class="sec-title__title">Why Life Insurance?</h3>
+      <p class="mt-3" style="color:#555; max-width:600px; margin:0 auto;">
+        Secure your loved ones’ future with simple, reliable protection that grows with them.
+      </p>
+    </div>
+
+    <!-- ROW 1 -->
+    <div class="row gutter-y-30 justify-content-center">
+      <!-- 01 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-three__item wow fadeInUp" data-wow-delay="0.1s">
+          <div class="feature-three__top">
+            <div class="feature-three__counter">01</div>
+            <div class="feature-three__icon">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+          </div>
+          <div class="feature-three__content">
+            <h3 class="feature-three__title">Financial Safety for Your Family</h3>
+            <p class="feature-three__info">
+              Ensure your loved ones stay financially independent, even in your absence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-three__item wow fadeInUp" data-wow-delay="0.2s">
+          <div class="feature-three__top">
+            <div class="feature-three__counter">02</div>
+            <div class="feature-three__icon">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+          </div>
+          <div class="feature-three__content">
+            <h3 class="feature-three__title">Covers Loans & Liabilities</h3>
+            <p class="feature-three__info">
+              Protect your family from the stress of unpaid EMIs, home loans, and liabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-three__item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="feature-three__top">
+            <div class="feature-three__counter">03</div>
+            <div class="feature-three__icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+          </div>
+          <div class="feature-three__content">
+            <h3 class="feature-three__title">Funds Education & Marriage</h3>
+            <p class="feature-three__info">
+              Build a financial foundation for your children’s dreams and milestones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="row gutter-y-30 justify-content-center mt-4">
+      <!-- 04 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-three__item wow fadeInUp" data-wow-delay="0.4s">
+          <div class="feature-three__top">
+            <div class="feature-three__counter">04</div>
+            <div class="feature-three__icon">
+              <i class="fa-solid fa-person-walking"></i>
+            </div>
+          </div>
+          <div class="feature-three__content">
+            <h3 class="feature-three__title">Protects Your Lifestyle</h3>
+            <p class="feature-three__info">
+              Maintain your family’s lifestyle, dignity, and long-term comfort without compromise.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-three__item wow fadeInUp" data-wow-delay="0.5s">
+          <div class="feature-three__top">
+            <div class="feature-three__counter">05</div>
+            <div class="feature-three__icon">
+              <i class="fa-solid fa-face-smile-beam"></i>
+            </div>
+          </div>
+          <div class="feature-three__content">
+            <h3 class="feature-three__title">Peace of Mind</h3>
+            <p class="feature-three__info">
+              Feel confident knowing your family is protected in every situation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-three__item wow fadeInUp" data-wow-delay="0.6s">
+          <div class="feature-three__top">
+            <div class="feature-three__counter">06</div>
+            <div class="feature-three__icon">
+              <i class="fa-solid fa-piggy-bank"></i>
+            </div>
+          </div>
+          <div class="feature-three__content">
+            <h3 class="feature-three__title">Tax Benefits</h3>
+            <p class="feature-three__info">
+              Save more with benefits under Sections 80C and 10(10D).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<section class="insurance-types">
+  <div class="container">
+    <div class="sec-title text-center">
+      <h6 class="sec-title__tagline">Our Offerings</h6>
+      <h3 class="sec-title__title">Types of Life Insurance Plans</h3>
+    </div>
+
+    <div class="row gutter-y-30 justify-content-center">
+      <!-- Term Life -->
+      <div class="col-md-6 col-lg-4">
+        <div class="insurance-card wow fadeInUp" data-wow-delay="0.1s">
+          <div class="icon-box">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <h4 class="title">Term Life Insurance</h4>
+          <ul class="list">
+            <li>Pure protection plan</li>
+            <li>Highest coverage at lowest premium</li>
+            <li><strong>Ideal for:</strong> Young earners, parents with responsibilities</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Whole Life -->
+      <div class="col-md-6 col-lg-4">
+        <div class="insurance-card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="icon-box">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h4 class="title">Whole Life Insurance</h4>
+          <ul class="list">
+            <li>Covers you for your entire lifetime</li>
+            <li>Comes with a maturity benefit</li>
+            <li><strong>Ideal for:</strong> Long-term planners, legacy builders</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ULIPs -->
+      <div class="col-md-6 col-lg-4">
+        <div class="insurance-card wow fadeInUp" data-wow-delay="0.3s">
+          <div class="icon-box">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h4 class="title">ULIPs (Unit Linked Insurance Plans)</h4>
+          <ul class="list">
+            <li>Life cover + investment in one</li>
+            <li>Grows your wealth over time</li>
+            <li><strong>Ideal for:</strong> Risk-takers, wealth-focused buyers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Child Plan -->
+      <div class="col-md-6 col-lg-4">
+        <div class="insurance-card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="icon-box">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <h4 class="title">Child Life Insurance Plans</h4>
+          <ul class="list">
+            <li>Secures your child’s future education</li>
+            <li>Funds available when needed most</li>
+            <li><strong>Ideal for:</strong> Parents planning ahead</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Retirement -->
+      <div class="col-md-6 col-lg-4">
+        <div class="insurance-card wow fadeInUp" data-wow-delay="0.5s">
+          <div class="icon-box">
+            <i class="fa-solid fa-person-cane"></i>
+          </div>
+          <h4 class="title">Retirement / Pension Plans</h4>
+          <ul class="list">
+            <li>Guaranteed income after retirement</li>
+            <li>Keeps you financially independent</li>
+            <li><strong>Ideal for:</strong> Long-term peace of mind</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+
+<style>
+    .insurance-types {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f7faff, #ffffff);
+}
+
+.sec-title__tagline {
+  color: #007bff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.sec-title__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+.insurance-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 35px 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.insurance-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  transition: all 0.4s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.insurance-card:hover::before {
+  top: 0;
+  opacity: 0.08;
+}
+
+.insurance-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+  background: #e7f0ff;
+  color: #007bff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 36px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.insurance-card:hover .icon-box {
+  background: #007bff;
+  color: #fff;
+  transform: rotate(10deg) scale(1.1);
+}
+
+.insurance-card .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.insurance-card .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.insurance-card .list li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.insurance-card .list li strong {
+  color: #007bff;
+}
+
+/* Animation */
+.wow {
+  visibility: visible;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .insurance-card {
+    padding: 30px 20px;
+  }
+  .icon-box {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+}
+
+/* Extra spacing at the bottom of the section */
+.insurance-types {
+  padding-bottom: 100px; /* add more bottom space */
+}
+
+/* Ensure even spacing between rows */
+.insurance-types .row.gutter-y-30 {
+  row-gap: 40px; /* adds vertical gap between cards */
+}
+
+
+</style>
+
+
+
+<section class="faq-section">
+  <div class="container">
+    <div class="sec-title text-center">
+      <h6 class="sec-title__tagline">Need Clarity?</h6>
+      <h3 class="sec-title__title">Frequently Asked Questions</h3>
+      <p class="mt-3" style="color:#555; max-width:600px; margin:0 auto;">
+        We’ve answered the most common questions to help you make informed insurance decisions with confidence.
+      </p>
+    </div>
+
+    <div class="faq-container">
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What is term life insurance?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Term life insurance offers pure protection for a fixed period. It provides a large life cover at an affordable premium, ensuring your family’s financial safety if something happens to you.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How is a life insurance premium calculated?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Premiums are based on factors such as your age, income, health, coverage amount, and policy term. Younger and healthier individuals enjoy lower premiums.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I have more than one life insurance policy?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes, you can hold multiple life insurance policies to meet different financial goals—such as term protection, child education, and retirement planning.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What tax benefits do life insurance policies offer?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            You can claim tax deductions under Section 80C on premiums paid, and maturity proceeds may be exempt under Section 10(10D) of the Income Tax Act.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<style>
+  .faq-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fbff, #ffffff);
+  }
+
+  .faq-container {
+    max-width: 800px;
+    margin: 40px auto 0;
+  }
+
+  .faq-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .faq-item.active {
+    box-shadow: 0 4px 25px rgba(0, 123, 255, 0.2);
+  }
+
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 20px 25px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .faq-question i {
+    color: #007bff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .faq-item.active .faq-question i {
+    transform: rotate(180deg);
+    color: #0056b3;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: #f9fbff;
+    padding: 0 25px;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 20px 25px;
+  }
+
+  .faq-answer p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .faq-question:hover {
+    color: #007bff;
+  }
+
+  @media (max-width: 767px) {
+    .faq-question {
+      font-size: 16px;
+      padding: 18px 20px;
+    }
+  }
+</style>
+
+<script>
+  const faqButtons = document.querySelectorAll(".faq-question");
+
+  faqButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const faqItem = button.parentElement;
+
+      // Close other FAQs
+      document.querySelectorAll(".faq-item.active").forEach((item) => {
+        if (item !== faqItem) item.classList.remove("active");
+      });
+
+      // Toggle this FAQ
+      faqItem.classList.toggle("active");
+
+      // Change icon
+      document.querySelectorAll(".faq-question i").forEach((icon) => {
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
+      });
+
+      if (faqItem.classList.contains("active")) {
+        button.querySelector("i").classList.remove("fa-plus");
+        button.querySelector("i").classList.add("fa-minus");
+      }
+    });
+  });
+</script>
+
+
+        <div class="client-carousel client-carousel-one ">
+            <div class="client-carousel__shape-1">
+                <img src="assets/images/shapes/line-shape-1.png" alt="shape-1">
+            </div>
+            <div class="client-carousel__shape-2">
+                <img src="assets/images/shapes/line-shape-2.png" alt="shape-2">
+            </div>
+
+            <div class="container">
+                <div class="client-carousel__one modins-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin":10,
+            "smartSpeed": 700,
+            "loop":true,
+            "autoplay": 6000,
+            "nav":false,
+            "dots":false,
+            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+            "responsive":{
+                "0":{
+                    "items":1,
+                    "margin": 0
+                },
+                "360":{
+                    "items":2,
+                    "margin": 0
+                },
+                "575":{
+                    "items":3,
+                    "margin": 30
+                },
+                "768":{
+                    "items":3,
+                    "margin": 30
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 30
+                },
+                "1200":{
+                    "items": 5
+                }
+            }
+            }'>
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__one__item">
+                        <img src="assets/images/resources/brand-1-1.png" alt="modins">
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.thm-owl__slider -->
+            </div><!-- /.container -->
+        </div><!-- /.client-carousel -->
+              
+<footer class="footer-section text-white" style="background-color:#0b1727; border-radius:50px 50px 0 0; padding-top:60px;">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+
+      <!-- 🔹 Logo and About -->
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex align-items-center mb-3">
+          <img src="assets/images/logo/P365_LOGO_WHITE.png" alt="Policy365 Logo" width="140" class="me-3">
+          
+        </div>
+        <p style="color:#b8c4d4; font-size:15px; line-height:1.6;">
+          As a Composite Broker, we partner with all private and public sector insurers to provide
+          comprehensive General, Life, and Reinsurance solutions.
+        </p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- 🔹 Company Links -->
+      <div class="col-md-6 col-lg-2">
+        <h5 class="fw-bold mb-3">Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="posp.html">Become POSP with Us</a></li>
+          <li><a href="login.html">Customer Login</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 Quick Links -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="terms.html">Terms and Conditions</a></li>
+          <li><a href="grievance.html">Grievance & Redressal Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 Contact Info -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Contact Info</h5>
+        <ul class="list-unstyled footer-contact">
+          <li><i class="fas fa-phone me-2"></i>022-62526252</li>
+          <li><i class="fas fa-envelope me-2"></i>New Policies: <a href="mailto:contact@policies365.com">contact@policies365.com</a></li>
+          <li><i class="fas fa-envelope me-2"></i>Support & Claims: <a href="mailto:helpdesk@policies365.com">helpdesk@policies365.com</a></li>
+          <li><i class="fas fa-map-marker-alt me-2"></i>First Floor, Sangam Complex, C&B Square,<br>102, Chakala, Andheri East, Mumbai, Maharashtra 400059</li>
+        </ul>
+      </div>
+
+    </div><!-- /.row -->
+
+    <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0;">
+
+    <!-- Copyright -->
+    <div class="text-center pb-3 small" style="color:#b8c4d4;">
+      © <span class="dynamic-year"></span> Navnit Insurance Broking Pvt. Ltd. All rights reserved.
+    </div>
+
+  </div><!-- /.container -->
+</footer>
+
+
+<style>
+  .footer-section a {
+  color: #b8c4d4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.social-icon:hover {
+  background: #00c6ff;
+  color: #fff;
+}
+.footer-section h5 {
+  font-size: 17px;
+  color: #fff;
+}
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+.footer-contact i {
+  color: #00c6ff;
+}
+
+</style>
+    </div><!-- /.page-wrapper -->
+
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" width="155" alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@modins.com">needhelp@modins.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__social">
+                <a href="https://twitter.com/">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://facebook.com/">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://pinterest.com/">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
+                <a href="https://instagram.com/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div><!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="modins-btn modins-btn--base">
+                    <span><i class="icon-magnifying-glass"></i></span>
+                    <em></em>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <script src="assets/vendors/ion.rangeSlider/ion.rangeSlider.min.js"></script>
+    <!-- template js -->
+    <script src="assets/js/modins.js"></script>
+</body>
+
+
+<!-- Mirrored from bracketweb.com/modins-html/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Nov 2025 07:19:49 GMT -->
+</html>
